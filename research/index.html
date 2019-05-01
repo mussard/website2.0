@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- ===================================== HEADER ===================================== -->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Presentation of my current main research interests, including implementations in MOLPRO">
+<meta name="keywords"    content="Mussard,Sandeep,Sharma,University of Colorado at Boulder,MRPT,Multireference,Perturbation,research,summary,RPA,Random Phase Approximation">
+<meta name="author"      content="Bastien Mussard">
+<meta name="pagename"    content="Bastien MUSSARD - Research">
+<meta name="viewport"    content="width=device-width,initial-scale=1.0">
+<title>Bastien MUSSARD - Research</title>
+
+<link rel="stylesheet" href="/mussard/website2.0/master/styles.css">
+</head>
+<!-- ================================================================================== -->
+
+
+<body style="background-color:#EEEEEE">
+
+
+<!-- ================================================================================== -->
+<div class="tab" style="margin-top:0px;position:fixed;overflow: visible;">
+
+<!-- ================================================================================== -->
+<div style="width:100%;height:50px;">
+<table style="width:100%;height:50px;background:red">
+<tbody>
+<tr>
+<td style="vertical-align:middle;color:white">
+  <center>
+    This is an old version of my site.
+    <br>
+    The site has moved to <a hreflang="en" style="color:white" href="http://mussard.github.io/">http://mussard.github.io/</a>
+  </center>
+</td>
+</tr></tbody>
+</table>
+</div>
+<!-- ================================================================================== -->
+
+<table style="width:100%;background:lightgray">
+<tbody>
+<tr style="border-top:2pt solid black;border-bottom:4pt double black">
+<td>
+  <div class="row">
+    <div class="col1"></div>
+    <div class="col2">
+
+    <table>
+    <tbody>
+    <tr>
+    <td class="header">
+      <div>
+        <span class="line">
+           <a class="menu" hreflang="en" href="/mussard/website2.0/master/index.html">Home</a>
+           &nbsp;&nbsp;&nbsp;&nbsp;
+           <a class="menu" hreflang="en" href="/mussard/website2.0/master/cv/index.html">CV</a>
+           &nbsp;&nbsp;&nbsp;&nbsp;
+           <a class="menu" hreflang="en" href="/mussard/website2.0/master/research/index.html">Research</a>
+           &nbsp;&nbsp;&nbsp;&nbsp;
+           <a class="menu" hreflang="en" href="/mussard/website2.0/master/publications/index.html">Publications</a>
+        </span>
+        <span class="space2">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="line2">
+           <a class="menu" hreflang="en" href="/mussard/website2.0/master/softwares/index.html">Softwares</a>
+           &nbsp;&nbsp;&nbsp;&nbsp;
+           <a class="menu" hreflang="en" href="/mussard/website2.0/master/documents/index.html">Talks & Notes</a>
+           &nbsp;&nbsp;&nbsp;&nbsp;
+           <a class="menu" hreflang="en" href="/mussard/website2.0/master/thesis/index.html">Thesis</a>
+        </span>
+        <span class="space1">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="line1">
+           (Last modified: 15 August 2017)
+        </span>
+      </div>
+    </td>
+    </tr></tbody>
+    </table>
+
+    </div>
+    <div class="col1"></div>
+  </div>
+
+</td>
+</tr></tbody>
+</table>
+</div>
+<!-- ================================================================================== -->
+
+<br><br>
+
+<!-- ================================================================================== -->
+<div class="tab">
+  <div class="row">
+    <div class="col1"></div>
+    <div class="col2">
+
+<table class="round">
+<tbody>
+
+
+<!-- ================================================================================== -->
+<tr>
+<td class="round" style="padding:10px 30px 10px 30px;">
+  <h1>Bastien Mussard ... Research</h1>
+</td>
+</tr>
+<!-- ================================================================================== -->
+
+<tr style="height:30px"></tr>
+
+<!-- ================================================================================== -->
+<tr>
+<td class="round">
+
+<h2>Multi-reference Perturbation Theory</h2>
+<br>
+<br>
+I have implemented a fully internally contracted version
+of multi-reference perturbation theories (NEVPT2/MRLCC)
+in a program interfaced with PySCF.
+The implementation of both the density fitting approximation for the integrals and the cumulant approximation for the high-order reduced density matrix involved in the equations
+allows the treatment of larger systems of interest.
+<br>
+<br>
+<br> (//ongoing work//)
+
+</td>
+</tr>
+<!-- ================================================================================== -->
+
+<tr style="height:30px"></tr>
+
+<!-- ================================================================================== -->
+<tr>
+<td class="round">
+
+<h2>Evaluation of determinant in QMC</h2>
+<br>
+<br>
+I started working on the efficient evaluation of a great number of determinants using the determinant lemma of the Sherman-Morrison-Woodbury formula,
+both for the Quantum Monte-Carlo steps and for the optimization of the wave-function.
+This is a collaboration, at the LCT, with Cyrus Umrigar from the Cornell University and the implementation is done in the CHAMP software.
+<br>
+<br>
+<br> (//ongoing work//)
+</td>
+</tr>
+<!-- ================================================================================== -->
+
+<tr style="height:30px"></tr>
+
+<!-- ================================================================================== -->
+<tr>
+<td class="round">
+
+<center>
+<img src="/mussard/website2.0/doc/graphabstract.png"  alt=""  style="width:85%">
+</center>
+<br>
+<h2>Fractional occupation numbers</h2>
+<br>
+<br>
+To better understand the RPA properties, a study of calculations with fractional occupation numbers has been initiated.
+This type of analysis allows one to estimate how a method handles the <i>N</i>-electrons self-interaction error, or, more accurately, the delocalization error.
+Some early implementation in the MOLPRO quantum chemistry package yields interesting results useful to compare the behavior of different RPA approximations.
+<br>
+<br>
+<br><strong>Fractional-charge and fractional-spin errors in range-separated density-functional theory.</strong>
+<br> B. Mussard, J. Toulouse, Mol. Phys. <b>115</b> 161 (2017)
+<br>
+    (<a target="_blank" hreflang="en" href="http://dx.doi.org/10.1080/00268976.2016.1213910">doi</a>)
+    (<a                 hreflang="en" href="/mussard/website2.0/doc/MusTou-MP-2016.pdf">pdf</a>)
+    (<a target="_blank" hreflang="en" href="http://hal.upmc.fr/hal-01344404">hal</a>)
+    (<a target="_blank" hreflang="en" href="http://arxiv.org/abs/1607.03621">arXiv</a>)
+</td>
+</tr>
+<!-- ================================================================================== -->
+
+<tr style="height:30px"></tr>
+
+<!-- ================================================================================== -->
+<tr>
+<td class="round">
+
+<center>
+    <img src="/mussard/website2.0/doc/DistStateEnergies_transparent.png"  alt="DistStateEnergies"  style="width:65%">
+</center>
+<br>
+<h2>High-harmonic generation spectra</h2>
+<br>
+<br>
+We explored the computation of high-harmonic generation spectra in atoms by means of Gaussian basis sets in time-dependent close coupling approaches. 
+We investigated the efficiency of Gaussian functions specifically designed for the description of the continuum proposed by Kaufmann <i>et al.</i> ; we notably studied the effect of increasing the basis set cardinal number, the number of diffuse basis functions, and the number of Gaussian pseudo-continuum basis functions for various laser parameters. 
+Our results show that the latter significantly improve the description of the low-lying continuum states, and provide a satisfactory agreement with grid calculations.
+<br>
+<br>
+<br><strong>Gaussian continuum basis functions for calculating high-harmonic generation spectra.</strong>
+<br>E. Coccia, B. Mussard, M. Labeye, J. Caillat, R. Taieb, J. Toulouse, E. Luppi, Int. J. Quantum Chem. <b>116</b> 1120 (2016)
+<br>
+    (<a target="_blank" hreflang="en" href="http://dx.doi.org/10.1002/qua.25146">doi</a>)
+    (<a                 hreflang="en" href="/mussard/website2.0/doc/CocMusLabCaiTaiTouLup-2016.pdf">pdf</a>)
+    (<a target="_blank" hreflang="en" href="http://hal.upmc.fr/hal-01277883">hal</a>)
+    (<a target="_blank" hreflang="en" href="http://arxiv.org/abs/1602.07202">arXiv</a>)
+</td>
+</tr>
+<!-- ================================================================================== -->
+
+<tr style="height:30px"></tr>
+
+<!-- ================================================================================== -->
+<tr>
+<td class="round">
+
+<center>
+    <img src="/mussard/website2.0/doc/Atomic_PBERPA.png"  alt="Atomic_PBERPA"  style="width:65%">
+</center>
+<br>
+<h2>RPA formalisms</h2>
+<br>
+<br>
+I worked on the different formalisms in which the RPA equations can be derived.
+I in particular explored in a systematic and new way the formalism called ''dielectric matrix formalism''.
+The examination and comparison of the different RPA formalisms reveals the underlying unity between them and allows to obtain crucial information about the nature of the approximations that are made during the <i>a priori</i> very different derivations.
+I implemented this dielectric matrix formalism and the various approximations that can be made in this context in the MOLPRO quantum chemistry package, including a new Clenshaw-Curtis quadrature for the integration over the frequency dimension.
+<br>
+<br>
+<br><strong>Dielectric matrix formulation of correlation energies in the Random Phase Approximation (RPA): inclusion of exchange effects.</strong>
+<br>B. Mussard, D. Rocca, G. Jansen, J.G. Ángyán, J. Chem. Theory Comput. <b>12</b> 2191 (2016)
+<br>
+    (<a target="_blank" hreflang="en" href="http://dx.doi.org/10.1021/acs.jctc.5b01129">doi</a>)
+    (<a                 hreflang="en" href="/mussard/website2.0/doc/MusRocJanAng-2015.pdf">pdf</a>)
+    (<a target="_blank" hreflang="en" href="http://hal.upmc.fr/hal-01304895">hal</a>)
+    (<a target="_blank" hreflang="en" href="http://arxiv.org/abs/1604.06549">arXiv</a>)
+    (<a                 hreflang="en" href="/mussard/website2.0/doc/MusRocJanAng-2015-SuppInfo.pdf">suppl</a>)
+</td>
+</tr>
+<!-- ================================================================================== -->
+
+<tr style="height:30px"></tr>
+
+<!-- ================================================================================== -->
+<tr>
+<td class="round">
+
+<center>
+    <img src="/mussard/website2.0/doc/view1_CHlmo_tp.png"  alt="view1_CHlmo"  style="width:22%">
+    <img src="/mussard/website2.0/doc/view1_CHpoo1_tp.png" alt="view1_CHpoo1" style="width:22%">
+    <img src="/mussard/website2.0/doc/view1_CHpoo2_tp.png" alt="view1_CHpoo2" style="width:22%">
+    <img src="/mussard/website2.0/doc/view1_CHpoo3_tp.png" alt="view1_CHpoo3" style="width:22%">
+<br><img src="/mussard/website2.0/doc/view2_CHlmo_tp.png"  alt="view2_CHlmo"  style="margin:-50px 0px 0px 0px;width:22%">
+    <img src="/mussard/website2.0/doc/view2_CHpoo1_tp.png" alt="view2_CHpoo1" style="margin:-50px 0px 0px 0px;width:22%">
+    <img src="/mussard/website2.0/doc/view2_CHpoo2_tp.png" alt="view2_CHpoo2" style="margin:-50px 0px 0px 0px;width:22%">
+    <img src="/mussard/website2.0/doc/view2_CHpoo3_tp.png" alt="view2_CHpoo3" style="margin:-50px 0px 0px 0px;width:22%">
+</center>
+<br>
+<h2>POO: Local orbitals</h2>
+<br>
+<br>
+The use of local orbitals is one of the path that can be taken to reduce the computational cost of RPA calculations. 
+I studied the virtual localized orbitals that are the ''projected oscillatory orbitals'' (POO), an original idea of Boys that has not been developped in the litterature. 
+The basic equations concerning the POO have been derived during my thesis, including multipolar expansions of the bi-electronic integrals in the basis of the POO ; 
+it has also been shown that the matrix elements of the dipolar moment between an occupied localized orbital and a POO virtual localized orbital reduces to the expression of the overlap between two POOs. 
+This non-trivial result vastly simplifies the RPA equations that can be written in the POO basis. 
+<br>
+<br>
+<br><strong>Local Random Phase Approximation with Projected Oscillator Orbitals.</strong>
+<br>B. Mussard, J.G. Ángyán, Theor. Chem. Acc. <b>134</b> 1 (2015)
+<br>and
+<br>B. Mussard, J.G. Ángyán, <b>Chapter</b> in Péter R. Surján: A Festschrift from Theoretical Chemistry Account 99 (2016)
+<br>(<a target="_blank" hreflang="en" href="http://dx.doi.org/10.1007/s00214-015-1751-2">doi1</a>
+    /<a target="_blank" hreflang="en" href="http://dx.doi.org/10.1007/978-3-662-49825-5_13">doi2</a>)
+    (<a                 hreflang="en" href="/mussard/website2.0/doc/MusAng-TCA-2015.pdf">pdf</a>)
+    (<a target="_blank" hreflang="en" href="http://hal.upmc.fr/hal-01229901">hal</a>)
+    (<a target="_blank" hreflang="en" href="http://arxiv.org/abs/1511.05725">arXiv</a>)
+</td>
+</tr>
+<!-- ================================================================================== -->
+
+<tr style="height:30px"></tr>
+
+<!-- ================================================================================== -->
+<tr>
+<td class="round">
+
+<center>
+<img src="/mussard/website2.0/doc/HFdI_AE55_NDist.png"   alt="HFdI_AE55_NDist"   style="width:35%">
+<img src="/mussard/website2.0/doc/RSHdI_AE55_NDist.png"  alt="RSHdI_AE55_NDist"  style="width:35%">
+<br>
+<img src="/mussard/website2.0/doc/HFSO2_AE55_NDist.png"  alt="HFSO2_AE55_NDist"  style="width:35%">
+<img src="/mussard/website2.0/doc/RSHSO2_AE55_NDist.png" alt="RSHSO2_AE55_NDist" style="width:35%">
+</center>
+<br>
+<h2>Spin-unrestricted generalisation</h2>
+<br>
+<br>
+To widen the field of applications of our RPA methods, the derivations of most of the formalisms have been generalized to open shell systems and this has been implemented in the MOLPRO quantum chemistry package.
+Extended tests on datasets of atomisation energies (AE49) and of barrier heights energies (BH24) showed the excellent performance of a version of RPA with exchange called ''SO2'' when it is used in a range separation context.
+This variant was previously already known to have good performances on the S22 dataset, but this kind of generalizations and extensions of application field allows to better grasp the roots of the relative qualities of the different versions of RPA.
+<br>
+<br>
+<br><strong>Spin-unrestricted random-phase approximation with range separation: Benchmark on atomisation energies and energy barrier heights.</strong>
+<br>B. Mussard, P. Reinhardt, J.G. Ángyán, J. Toulouse, J. Chem. Phys. <b>142</b> 154123 (2015)
+<br>(<a target="_blank" hreflang="en" href="http://dx.doi.org/10.1063/1.4918710">doi</a>)
+    (<a                 hreflang="en" href="/mussard/website2.0/doc/MusReiAngTou-JCP-2015.pdf">pdf</a>)
+    (<a target="_blank" hreflang="en" href="http://hal.upmc.fr/hal-01141968">hal</a>)
+    (<a target="_blank" hreflang="en" href="http://arxiv.org/abs/1506.05907">arXiv</a>)
+    (<a                 hreflang="en" href="/mussard/website2.0/doc/MusReiAngTou-JCP-2015-SuppMat.pdf">suppl</a>)
+    (<a                 hreflang="en" href="/mussard/website2.0/doc/MusReiAngTou-JCP-2015-Erratum.pdf">err</a>)
+</td>
+</tr>
+<!-- ================================================================================== -->
+
+<tr style="height:30px"></tr>
+
+<!-- ================================================================================== -->
+<tr>
+<td class="round">
+
+<center>
+<img src="/mussard/website2.0/doc/cusp.png"         alt="cusp"         style="width:45%">
+<img src="/mussard/website2.0/doc/cusp_lr_2.png"    alt="cusp_lr_2"    style="width:45%">
+</center>
+<br>
+<h2>Basis convergence</h2>
+<br>
+<br>
+Among the advantages of the use of range separation methods, one finds that in this context the wavefunction part on a calculation is no more burdened by the treatment of the electron-electron coalescence and it is then expected that the convergence of the calculations with respect to the size of the gaussian basis set be better.
+A new study of the convergence of range-separated calculations allowed us to show,
+on the one hand, the exponential convergence of the quality of the expansion called ''partial-wave'' of the long-range wavefunction at the electron-electron coalescence with respect to the angular momentum of the expansion
+and, on the other hand, the also exponential convergence of the error made on the total RSH+MP2 energy with respect to the cardinal number of the Dunning basis.
+Based on these observations, we proposed an extrapolation method for the total energy of range-separated calculations.
+<br>
+<br>
+<br> <strong>Basis convergence of range-separated density-functional theory.</strong>
+<br> O. Franck, B. Mussard, E. Luppi, J. Toulouse, J. Chem. Phys. <b>142</b> 074107 (2015)
+<br>     (<a target="_blank" hreflang="en" href="http://dx.doi.org/10.1063/1.4907920">doi</a>)
+         (<a                 hreflang="en" href="/mussard/website2.0/doc/FraMusLupTou-JCP-2015.pdf">pdf</a>)
+         (<a target="_blank" hreflang="en" href="http://hal.upmc.fr/hal-01081816">hal</a>)
+         (<a target="_blank" hreflang="en" href="http://arxiv.org/abs/1412.2613">arXiv</a>)
+</td>
+</tr>
+<!-- ================================================================================== -->
+
+<tr style="height:30px"></tr>
+
+<!-- ================================================================================== -->
+<tr>
+<td class="round">
+
+<center>
+<img src="/mussard/website2.0/doc/c2h4_chi_transparent.png" alt="c2h4_chi" style="width:70%">
+<br>
+<img src="/mussard/website2.0/doc/c4h6_chi_transparent.png" alt="c4h6_chi" style="width:70%">
+</center>
+<br>
+<h2>Direct space</h2>
+<br>
+<br>
+Another axis of research is to work on functions such as the response functions, that are found when doing RPA calculations, by considering explicitly their dependance to the real space variables. 
+In my thesis I created tools to calculate these functions on parallelepipedic real space grids, and on so-called ''DFT-type'' grids. 
+A long-term goal could be the generation of grids such as to better sample the space <i>between</i> the atoms. 
+<br>
+<br>
+<br> <strong>Relationships between charge density response functions, exchange holes and localized orbitals.</strong>
+<br> B. Mussard, J.G. Ángyán, Comp. Theor. Chem. <b>1053</b> 44 (2015)
+<br>    (<a target="_blank" hreflang="en" href="http://dx.doi.org/10.1016/j.comptc.2014.10.039">doi</a>)
+        (<a                 hreflang="en" href="/mussard/website2.0/doc/MusAng-CTC-2015.pdf">pdf</a>)
+        (<a target="_blank" hreflang="en" href="http://hal.upmc.fr/hal-01122075">hal</a>)
+        (<a target="_blank" hreflang="en" href="http://arxiv.org/abs/1503.00284">arXiv</a>)
+<br><br><br>
+I also adapted the Effective Energy Denominator (EED) technique, which is a generalisation of the Unsöld approximation where the effective denominator depends on the coordinates and the frequency and is originally developped in the reciprocal space. 
+The goal of these developments is to be able to calculate the Kohn-Sham response function without summations on the virtual orbitals. 
+<br>
+<br> (//ongoing work//)
+</td>
+</tr>
+<!-- ================================================================================== -->
+
+<tr style="height:30px"></tr>
+
+<!-- ================================================================================== -->
+<tr>
+<td class="round">
+
+<center>
+<img src="/mussard/website2.0/doc/figure1_transparent.png" alt="figure1" style="width:90%">
+</center>
+<br>
+<h2>Gradients of the RPA correlation energy</h2>
+<br>
+<br>
+I derived the equations allowing to compute the analytical gradients of the RPA correlation energies in the context of range separation. 
+The formalism that was developped, which uses the lagrangian technique, allows an all-in-one derivation of the short- and long-range terms that emerge in the expressions of the gradient. 
+These terms show interesting parallels. 
+The equations were implemented in the MOLPRO quantum chemistry package, and this now allows to perform geometry optimisation at the RSH+RPA levels, and to obtain dipoles calculated at the RSH+RPA levels. 
+<br>
+<br>
+<br> <strong>Analytical Energy Gradients in Range-Separated Hybrid Density Functional Theory with Random Phase Approximation.</strong>
+<br> B. Mussard, P. Szalay, J.G. Ángyán, J. Chem. Theory Comput. <b>10</b> 1968 (2014)
+<br>     (<a target="_blank" hreflang="en" href="http://dx.doi.org/10.1021/ct401044h">doi</a>)
+         (<a                 hreflang="en" href="/mussard/website2.0/doc/MusSzaAng-JCTC-2014.pdf">pdf</a>)
+         (<a target="_blank" hreflang="en" href="http://hal.upmc.fr/hal-01122081">hal</a>)
+         (<a target="_blank" hreflang="en" href="http://arxiv.org/abs/1503.00277">arXiv</a>)
+</td>
+</tr>
+<!-- ================================================================================== -->
+
+<tr style="height:30px"></tr>
+
+<!-- ================================================================================== -->
+<tr>
+<td class="round">
+
+<center>
+<img src="/mussard/website2.0/doc/selected_exc_transparent.png" alt="selected_exc" style="width:60%">
+</center>
+<br>
+<h2>Selected excitations in localized orbitals</h2>
+<br>
+<br>
+Working with localized orbitals, we were able to show that long-range correlation contributions to range-separated density-functional theory can be computed with reduced computational effort.
+Indeed, the ''dispersion-only'' approximation to the dimer captures most of the interaction energy of the dimer
+(this avoids calculation of the counterpoise-corrected monomer).
+<br>
+<br>
+<br> <strong>Short-range DFT combined with long-range local RPA within a range-separated hybrid DFT framework.</strong>
+<br> E. Chermak, B. Mussard, J.G. Ángyán, P. Reinhardt, Chem. Phys. Lett. <b>550</b> 132 (2012)
+<br>     (<a target="_blank" hreflang="en" href="http://dx.doi.org/10.1016/j.cplett.2012.08.073">doi</a>)
+         (<a                 hreflang="en" href="/mussard/website2.0/doc/CheMusAngRei-CPL-2012.pdf">pdf</a>)
+         (<a target="_blank" hreflang="en" href="http://hal.upmc.fr/hal-01137697">hal</a>)
+         (<a target="_blank" hreflang="en" href="http://arxiv.org/abs/1504.06139">arXiv</a>)
+</td>
+</tr>
+<!-- ================================================================================== -->
+</tbody>
+</table>
+
+
+    </div>
+    <div class="col1"></div>
+  </div>
+</div>
+<!-- ================================================================================== -->
+
+<br><br>
+
+</body>
+</html>
